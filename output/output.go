@@ -1,6 +1,6 @@
 package output
 
-// Logger innterface defines itself as any variable that
+// Logger interface defines itself as any variable that
 // can describe itself as a string.
 type Logger interface {
 	Output() string

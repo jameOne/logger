@@ -22,6 +22,6 @@ func New(text string) Logger {
 }
 
 // Join returns an error that formats as the given text.
-func Join(perr error, err error) Logger {
-	return &errorString{fmt.Sprint(perr.Error(), ": ", err.Error())}
+func Join(previousError error, err error) Logger {
+	return &errorString{fmt.Sprint(previousError.Error(), ": ", err.Error())}
 }

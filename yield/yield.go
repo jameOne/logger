@@ -10,7 +10,7 @@ type yieldString struct {
 	s string
 }
 
-// Yeilds returns a yield that formats as the given text.
+// Yield returns a yield that formats as the given text.
 func (y *yieldString) Yield() string {
 	return y.s
 }

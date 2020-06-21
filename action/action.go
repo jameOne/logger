@@ -1,5 +1,5 @@
 // Package action is one component of a complete
-// logging utilty intended to promiote the writing of
+// logging utility intended to promote the writing of
 // intuitive logs.
 package action
 
@@ -9,14 +9,14 @@ type Logger interface {
 	Action() string
 }
 
-// Unexported stuct type used to implement the
+// Unexported struct type used to implement the
 // Action interface.
 type actionString struct {
 	s string
 }
 
 // This method ensures actionString will meet
-// requirments of the Action interface.
+// requirements of the Action interface.
 func (a *actionString) Action() string {
 	return a.s
 }
